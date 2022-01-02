@@ -1,0 +1,9 @@
+<div class="card">
+    <img [src]="imageURL" alt="background" style="width:100%">
+    <div class="container">
+      <h4><b>wannes strauven</b></h4>
+      <select class="form-control" [(ngModel)] = "value">
+        <option *ngFor="let image of images" value="image" selected = "keuze 1">keuze {{image}}</option>
+      </select>
+    </div>
+  </div>

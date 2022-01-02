@@ -1,0 +1,17 @@
+<div class="box background-is-primary" >
+    <label for="lname">First name:</label>
+<input type="text" [(ngModel)] = "voornaam" ><br><br>
+    <label for="lname">Last name:</label>
+<input type="text" [(ngModel)] = "naam"><br><br>
+    <label for="lname">Age:</label>
+<input type="text" [(ngModel)] = "leeftijd"><br><br>
+    <label for="lname">Job:</label>
+<input type="text" [(ngModel)] = "functie"><br><br>
+<button class="button is-primary" (click)="submit()">resultaat</button>
+</div>
+    
+<div [ngClass]="[style]" >
+<p>{{voornaam}} {{naam}}</p>
+<p> {{leeftijd}}</p>
+<p>{{functie}}</p>
+</div>
